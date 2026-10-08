@@ -1,0 +1,7 @@
+If conda activate dnlp fails with "conda: command not found" on GWDG:
+
+export PATH="$HOME/miniconda/bin:$PATH"
+source "$HOME/miniconda/etc/profile.d/conda.sh"
+conda activate dnlp
+
+For future login shells, make sure ~/.bash_profile sources ~/.bashrc.
