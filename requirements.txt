@@ -1,0 +1,10 @@
+torch
+transformers==4.45.2
+tokenizers==0.20.1
+datasets==3.0.1
+numpy
+pandas
+scikit-learn
+scipy
+tqdm
+matplotlib
