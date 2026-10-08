@@ -1,0 +1,17 @@
+Activate the environment first:
+conda activate dnlp
+
+SST:
+python multitask_classifier.py --option finetune --task sst --use_gpu --local_files_only --epochs 3
+
+STS:
+python multitask_classifier.py --option finetune --task sts --use_gpu --local_files_only --epochs 3
+
+QQP:
+python multitask_classifier.py --option finetune --task qqp --use_gpu --local_files_only --epochs 1 --batch_size 64
+
+ETPC detection:
+python bart_detection.py --use_gpu
+
+ETPC generation:
+python bart_generation.py --use_gpu
